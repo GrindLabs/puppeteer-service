@@ -1,0 +1,17 @@
+node_modules
+# Ignore hidden folders
+.git/
+.vscode/*
+.idea/
+.deploy/
+
+# Ignore non-hidden folders
+node_modules/
+
+# Accept files from ignored folders
+!.vscode/settings.json
+
+# Ignore setup files
+*.env
+
+# Ignore files

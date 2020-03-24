@@ -1,0 +1,43 @@
+{
+  "name": "puppeteer-service",
+  "version": "1.0.0",
+  "description": "The Puppeteer Cluster as a service using JSON-RPC v2.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "clear && node --experimental-modules app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandresgf/puppeteer-service.git"
+  },
+  "keywords": [
+    "puppeteer",
+    "cluster",
+    "puppeteer",
+    "cluster",
+    "puppeteer",
+    "as",
+    "a",
+    "service"
+  ],
+  "author": "GrindLabs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandresgf/puppeteer-service/issues"
+  },
+  "homepage": "https://github.com/alexandresgf/puppeteer-service#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "jayson": "^3.2.0",
+    "mongoose": "^5.9.6",
+    "puppeteer": "^2.1.1",
+    "puppeteer-cluster": "^0.19.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "shipit-cli": "^5.3.0",
+    "shipit-deploy": "^5.3.0"
+  }
+}

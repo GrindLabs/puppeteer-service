@@ -1,2 +1,2 @@
-# puppeteer-service
-The puppeteer cluster as a service.
+# Puppeteer Service
+The Puppeteer Cluster as a service.
