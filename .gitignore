@@ -7,9 +7,11 @@ node_modules
 
 # Ignore non-hidden folders
 node_modules/
+logs/*
 
 # Accept files from ignored folders
 !.vscode/settings.json
+!logs/.gitkeep
 
 # Ignore setup files
 *.env
