@@ -1,0 +1,16 @@
+version: '2'
+services:
+  puppeteer-service:
+    container_name: puppeteer-service
+    image: alexandresgf/puppeteer-chrome:latest
+    user: "pptruser"
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/home/pptruser/app
+    command: "npm run start"
+
+networks:
+  default:
+    external:
+      name: streamerbot_streamerbotnet

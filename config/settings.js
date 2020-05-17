@@ -51,6 +51,7 @@ const cluster = {
       width: 1920,
       height: 1080,
     },
+    args: ['--no-sandbox'],
     timeout: 60000,
     userAgent: process.env.PUPPETEER_USER_AGENT,
   },
