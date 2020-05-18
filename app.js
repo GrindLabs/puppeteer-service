@@ -3,14 +3,14 @@ const bodyParser = require('body-parser');
 const connect = require('connect');
 const { Cluster } = require('puppeteer-cluster');
 const settings = require('./config/settings');
-const extractStream = require('./methods/extractStream');
+const extractRequestURI = require('./methods/extractRequestURI');
 
 (async () => {
   const logger = settings.logger;
   const puppeteer = await Cluster.launch(settings.cluster);
   const server = jayson.Server({
-    extractStream: new jayson.Method({
-      handler: extractStream,
+    extractRequestURI: new jayson.Method({
+      handler: extractRequestURI,
       params: { puppeteer: puppeteer },
     }),
   });
