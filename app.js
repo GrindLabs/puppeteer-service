@@ -4,6 +4,7 @@ const connect = require('connect');
 const { Cluster } = require('puppeteer-cluster');
 const settings = require('./config/settings');
 const extractRequestURI = require('./methods/extractRequestURI');
+const extractTopCanaisStream = require('./methods/extractTopCanaisStream');
 
 (async () => {
   const logger = settings.logger;
@@ -11,6 +12,10 @@ const extractRequestURI = require('./methods/extractRequestURI');
   const server = jayson.Server({
     extractRequestURI: new jayson.Method({
       handler: extractRequestURI,
+      params: { puppeteer: puppeteer },
+    }),
+    extractTopCanaisStream: new jayson.Method({
+      handler: extractTopCanaisStream,
       params: { puppeteer: puppeteer },
     }),
   });
